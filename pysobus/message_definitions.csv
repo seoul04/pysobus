@@ -22,10 +22,6 @@ pgn_id,manufacturer,opcode,source_address,pgn_length_bytes,spn_start_position,sp
 65535,John Deere,24,211,8,6,8,65535.211.6.24,Header number of rows in cut,,1,0,count
 65535,John Deere,24,211,8,7,8,65535.211.7.24,Header number of rows,,1,0,count
 65535,John Deere,24,211,8,8,8,65535.211.8.24,Header row spacing,,1,0,cm
-65535,John Deere,,28,8,1,8,65535.28.1.,PGN Usage Opcode,This PGN has different meaning based on this value,1,0,binary
-65535,John Deere,82,28,8,6,8,65535.28.6.24,latitude extra precision,to be added to 65267.28.1 for added precision in latitude,3.92156863E-10,0,deg
-65535,John Deere,82,28,8,7,8,65535.28.7.24,longitude extra precision,to be added to 65267.28.5 for added precision in longitude,3.92156863E-10,0,deg
-65535,John Deere,82,28,8,8,8,65535.28.8.24,altitude extra precision,to be added to 65256.28.7 for added precision in altitude,0.0004901961,0,m
 65534,John Deere,,244,8,1,8,65534.244.1.,PGN Usage Opcode,This PGN has different meaning based on this value,1,0,binary
 65534,John Deere,69,244,8,2,8,65534.244.2.69,Unloading Auger Position,How far out the unloading auger is; a bigger number meaning farther out,1,0,degrees
 65534,John Deere,69,244,8,4.1,1,65534.244.4.1.69,Unloading Auger On Y/N,Whether or not the unloader auger is on,1,0,bit
@@ -41,7 +37,7 @@ pgn_id,manufacturer,opcode,source_address,pgn_length_bytes,spn_start_position,sp
 65385,Case IH,,144,8,5,16,65385.144.5.,Grain Moisture,Crop moisture content (0.01% per bit),0.01,0,%
 65385,Case IH,,144,8,7,16,65385.144.7.,Work Width,Working width (mm),1,0,mm
 65488,Case IH,,240,8,1,16,65488.240.1.,Grain Flow,Crop mass flow (0.01 gram per second per bit),0.001,0,kg/s
-65377,Case IH,,39,8,1,16,65377.39.1.,Reel Horizontal Position,1.0 mm/bit gain; -1000.0 mm offset,1,-1000,mm
+65377,Case IH,,39,8,1,16,65377.39.1.,Reel Horizontal Position,1.0 mm/bit gain; -1000.0 mm offset,1,"-1000",mm
 65377,Case IH,,39,8,3,8,65377.39.3.,Header Type,0 = not defined; 1 = Corn Header; 2 = Grain Header; 3 = Pick-up Header; 4 = Draper Header; 5 = Programmable Header; 6 = Default Header,1,0,
 65377,Case IH,,39,8,7,16,65377.39.7.,Engine Oil Pressure,0.05 bar/bit gain; 0 bar offset,0.05,0,bar
 65380,Case IH,,39,8,1,16,65380.39.1.,Reel Speed,1 rpm/bit gain; 0 offset,1,0,rpm
